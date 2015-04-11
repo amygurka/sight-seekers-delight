@@ -118,3 +118,99 @@ Message: include(): Failed opening '/Applications/MAMP/htdocs/sightseekersdeligh
 File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache.php
 Line:    51
 -------------------------------------------- 
+[Apr 11 2015 18:50:07] ERROR_HANDLER 
+Number:  2
+Message: include(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/wp-cache-config.php): failed to open stream: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache.php
+Line:    51
+-------------------------------------------- 
+[Apr 11 2015 18:50:07] ERROR_HANDLER 
+Number:  2
+Message: include(): Failed opening '/Applications/MAMP/htdocs/sightseekersdelight/wp-content/wp-cache-config.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php5.6.2/lib/php')
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache.php
+Line:    51
+-------------------------------------------- 
+[Apr 11 2015 18:50:34] ERROR_HANDLER 
+Number:  2
+Message: include(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/wp-cache-config.php): failed to open stream: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache.php
+Line:    51
+-------------------------------------------- 
+[Apr 11 2015 18:50:34] ERROR_HANDLER 
+Number:  2
+Message: include(): Failed opening '/Applications/MAMP/htdocs/sightseekersdelight/wp-content/wp-cache-config.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php5.6.2/lib/php')
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache.php
+Line:    51
+-------------------------------------------- 
+[Apr 11 2015 18:50:36] ERROR_HANDLER 
+Number:  2
+Message: include(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/wp-cache-config.php): failed to open stream: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache.php
+Line:    51
+-------------------------------------------- 
+[Apr 11 2015 18:50:36] ERROR_HANDLER 
+Number:  2
+Message: include(): Failed opening '/Applications/MAMP/htdocs/sightseekersdelight/wp-content/wp-cache-config.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php5.6.2/lib/php')
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache.php
+Line:    51
+-------------------------------------------- 
+[Apr 11 2015 18:50:45] ERROR_HANDLER 
+Number:  2
+Message: include(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/wp-cache-config.php): failed to open stream: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache.php
+Line:    51
+-------------------------------------------- 
+[Apr 11 2015 18:50:45] ERROR_HANDLER 
+Number:  2
+Message: include(): Failed opening '/Applications/MAMP/htdocs/sightseekersdelight/wp-content/wp-cache-config.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php5.6.2/lib/php')
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache.php
+Line:    51
+-------------------------------------------- 
+[Apr 11 2015 18:50:57] ERROR_HANDLER 
+Number:  2
+Message: include(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/wp-cache-config.php): failed to open stream: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache.php
+Line:    51
+-------------------------------------------- 
+[Apr 11 2015 18:50:57] ERROR_HANDLER 
+Number:  2
+Message: include(): Failed opening '/Applications/MAMP/htdocs/sightseekersdelight/wp-content/wp-cache-config.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php5.6.2/lib/php')
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache.php
+Line:    51
+-------------------------------------------- 
+[Apr 11 2015 18:50:57] ERROR_HANDLER 
+Number:  2
+Message: include(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/wp-cache-config.php): failed to open stream: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache.php
+Line:    51
+-------------------------------------------- 
+[Apr 11 2015 18:50:57] ERROR_HANDLER 
+Number:  2
+Message: include(): Failed opening '/Applications/MAMP/htdocs/sightseekersdelight/wp-content/wp-cache-config.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php5.6.2/lib/php')
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache.php
+Line:    51
+-------------------------------------------- 
+[Apr 11 2015 18:51:09] ERROR_HANDLER 
+Number:  2
+Message: include(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/wp-cache-config.php): failed to open stream: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache.php
+Line:    51
+-------------------------------------------- 
+[Apr 11 2015 18:51:09] ERROR_HANDLER 
+Number:  2
+Message: include(): Failed opening '/Applications/MAMP/htdocs/sightseekersdelight/wp-content/wp-cache-config.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php5.6.2/lib/php')
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache.php
+Line:    51
+-------------------------------------------- 
+[Apr 11 2015 18:51:09] ERROR_HANDLER 
+Number:  2
+Message: include(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/wp-cache-config.php): failed to open stream: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache.php
+Line:    51
+-------------------------------------------- 
+[Apr 11 2015 18:51:09] ERROR_HANDLER 
+Number:  2
+Message: include(): Failed opening '/Applications/MAMP/htdocs/sightseekersdelight/wp-content/wp-cache-config.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php5.6.2/lib/php')
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache.php
+Line:    51
+-------------------------------------------- 
