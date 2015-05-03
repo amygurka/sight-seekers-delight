@@ -37,16 +37,16 @@ switch ($_SERVER['SERVER_NAME']) {
     define('DB_HOST', 'localhost');
   break;
   case 'staging.sightseekersdelight.com' :
-    define('DB_NAME', 'stagingdatabasename');
-    define('DB_USER', 'stagingdatabaseuser');
-    define('DB_PASSWORD', 'stagingpassword');
+    define('DB_NAME', '95386gglad');
+    define('DB_USER', 'sight95386');
+    define('DB_PASSWORD', 'toto123');
     define('DB_HOST', 'localhost');
   break;
   case 'www.sightseekersdelight.com' :
-    define('DB_NAME', 'livedatabasename');
-    define('DB_USER', 'livedatabaseuser');
-    define('DB_PASSWORD', 'livepassword');
-    define('DB_HOST', 'mysql.myhost.com');
+    define('DB_NAME', 'sight95386');
+    define('DB_USER', 'sight95386');
+    define('DB_PASSWORD', 'toto123');
+    define('DB_HOST', 'mysql8.lwspanel.com/myadmin4');
   break;
 }
 
