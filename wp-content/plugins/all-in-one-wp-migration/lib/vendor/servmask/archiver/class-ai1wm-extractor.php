@@ -74,6 +74,47 @@ class Ai1wm_Extractor extends Ai1wm_Archiver {
 		return $files_found;
 	}
 
+	public function get_one_file_header( $exclude = array() ) {
+		$block = $this->read_from_handle( $this->file_handle, 4377, $this->filename );
+
+		if ( $block === $this->eof ) {
+			// we reached end of file, set the pointer to the end of the file so that feof returns true
+			@fseek( $this->file_handle, 1, SEEK_END );
+			@fgetc( $this->file_handle );
+			return;
+		}
+
+		// get file data from header block
+		$data = $this->get_data_from_block( $block );
+
+		// set filename
+		if ( $data['path'] === '.' ) {
+			$filename = $data['filename'];
+		} else {
+			$filename = $data['path'] . '/' . $data['filename'];
+		}
+
+		// should we skip this file?
+		if ( in_array( $filename, $exclude ) ) {
+			// we don't have a match, skip file content
+			$this->set_file_pointer( $this->file_handle, $data['size'], $this->filename );
+			return false;
+		}
+
+		// we need to build the path for the file
+		$path = str_replace( '/', DIRECTORY_SEPARATOR, $data['path'] );
+
+		// append prepend extract location
+		$path = $location . DIRECTORY_SEPARATOR . $path;
+
+		// skip content
+		$this->set_file_pointer( $this->file_handle, $data['size'], $this->filename );
+
+		return array(
+			'path' => $path . DIRECTORY_SEPARATOR . $data['filename'],
+		);
+	}
+
 	public function extract_one_file_to( $location, $exclude = array() ) {
 		if ( false === file_exists( $location ) ) {
 			throw new Ai1wm_Not_Readable_Exception( sprintf( __( '%s doesn\'t exist', AI1WM_PLUGIN_NAME ), $location ) );
@@ -231,16 +272,7 @@ class Ai1wm_Extractor extends Ai1wm_Archiver {
 	}
 
 	private function set_mtime_of_file( $file, $mtime ) {
-		$result = touch( $file, $mtime );
-
-		if ( false === $result ) {
-			throw new Ai1wm_Not_Accesible_Exception(
-				sprintf(
-					__( 'Unable to set last modified date of %s', AI1WM_PLUGIN_NAME ),
-					$file
-				)
-			);
-		}
+		@touch( $file, $mtime );
 	}
 
 	private function set_file_mode( $file, $mode = 0644 ) {

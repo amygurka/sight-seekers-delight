@@ -38,7 +38,7 @@ if ( function_exists( 'gethostname' ) && in_array( gethostname(), $local ) ) {
 // ==================
 // = Plugin Version =
 // ==================
-define( 'AI1WM_VERSION', '3.2.2' );
+define( 'AI1WM_VERSION', '3.2.2-48-gc3416e1' );
 
 // ===============
 // = Plugin Name =
@@ -64,11 +64,6 @@ define( 'AI1WM_LOG_FILE', AI1WM_STORAGE_PATH . DIRECTORY_SEPARATOR . 'error.log'
 // = Status Path =
 // ===============
 define( 'AI1WM_STATUS_FILE', AI1WM_STORAGE_PATH . DIRECTORY_SEPARATOR . 'status.php' );
-
-// ================
-// = Backups Path =
-// ================
-define( 'AI1WM_BACKUPS_PATH', AI1WM_PATH . DIRECTORY_SEPARATOR . 'backups' );
 
 // ============
 // = Lib Path =
@@ -175,16 +170,6 @@ define( 'AI1WM_MAINTENANCE_MODE', 'ai1wm_maintenance_mode' );
 // ==============
 define( 'AI1WM_SECRET_KEY', 'ai1wm_secret_key' );
 
-// =============
-// = Auth User =
-// =============
-define( 'AI1WM_AUTH_USER', 'ai1wm_auth_user' );
-
-// =================
-// = Auth Password =
-// =================
-define( 'AI1WM_AUTH_PASSWORD', 'ai1wm_auth_password' );
-
 // ================
 // = Messages Key =
 // ================
@@ -216,6 +201,11 @@ define( 'AI1WM_MAX_CHUNK_RETRIES', 10 );
 if ( ! defined( 'WP_CONTENT_DIR' ) ) {
 	define( 'WP_CONTENT_DIR', ABSPATH . 'wp-content' );
 }
+
+// ================
+// = Backups Path =
+// ================
+define( 'AI1WM_BACKUPS_PATH', WP_CONTENT_DIR . DIRECTORY_SEPARATOR . 'ai1wm-backups' );
 
 // ==========================
 // = WP_PLUGIN_DIR Constant =

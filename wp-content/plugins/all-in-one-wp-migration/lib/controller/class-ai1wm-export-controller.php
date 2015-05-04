@@ -45,11 +45,6 @@ class Ai1wm_Export_Controller {
 				$args = $_REQUEST;
 			}
 
-			// Set storage path
-			if ( empty( $args['storage'] ) ) {
-				$args['storage'] = uniqid();
-			}
-
 			// Set secret key
 			$secret_key = null;
 			if ( isset( $args['secret_key'] ) ) {
@@ -100,7 +95,12 @@ class Ai1wm_Export_Controller {
 			}
 
 			// Invoke method
-			echo json_encode( $provider->$method() );
+			$response = $provider->$method();
+			if ( is_array( $response ) ) {
+				echo json_encode( $response );
+			} else {
+				echo $response;
+			}
 			exit;
 		} catch ( Exception $e ) {
 			// Log the error
@@ -114,9 +114,6 @@ class Ai1wm_Export_Controller {
 					'message' => $e->getMessage(),
 				)
 			);
-
-			// End the process
-			wp_die( 'Exception while exporting: ' . $e->getMessage() );
 		}
 	}
 

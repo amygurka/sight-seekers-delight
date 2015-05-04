@@ -36,11 +36,6 @@ class Ai1wm_Import_Controller {
 				$args = $_REQUEST;
 			}
 
-			// Set storage path
-			if ( empty( $args['storage'] ) ) {
-				$args['storage'] = uniqid();
-			}
-
 			// Set secret key
 			$secret_key = null;
 			if ( isset( $args['secret_key'] ) ) {
@@ -105,9 +100,6 @@ class Ai1wm_Import_Controller {
 					'message' => $e->getMessage(),
 				)
 			);
-
-			// End the process
-			wp_die( 'Exception while importing: ' . $e->getMessage() );
 		}
 	}
 

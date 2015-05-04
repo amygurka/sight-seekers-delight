@@ -47,7 +47,7 @@ class Ai1wm_Storage {
 	 * @return string
 	 */
 	public function path() {
-		if ( ! isset( $this->storage ) ) {
+		if ( empty( $this->storage ) ) {
 			throw new Ai1wm_Storage_Exception( 'Storage name is not configured.' );
 		}
 
@@ -66,7 +66,7 @@ class Ai1wm_Storage {
 	 * @return string
 	 */
 	public function archive() {
-		if ( ! isset( $this->archive ) ) {
+		if ( empty( $this->archive ) ) {
 			throw new Ai1wm_Storage_Exception( 'Archive name is not configured.' );
 		}
 
@@ -84,7 +84,7 @@ class Ai1wm_Storage {
 	 * @return string
 	 */
 	public function backup() {
-		if ( ! isset( $this->archive ) ) {
+		if ( empty( $this->archive ) ) {
 			throw new Ai1wm_Storage_Exception( 'Archive name is not configured.' );
 		}
 
@@ -139,10 +139,10 @@ class Ai1wm_Storage {
 		);
 
 		foreach ($iterator as $item) {
-            // Skip dots
-            if ($iterator->isDot()) {
-                continue;
-            }
+			// Skip dots
+			if ($iterator->isDot()) {
+				continue;
+			}
 
 			if ($item->isFile()) {
 				unlink($item->getPathname());
