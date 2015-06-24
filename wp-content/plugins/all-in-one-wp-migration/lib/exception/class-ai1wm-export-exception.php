@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Copyright (C) 2014 ServMask Inc.
  *
@@ -23,6 +22,7 @@
  * ███████║███████╗██║  ██║ ╚████╔╝ ██║ ╚═╝ ██║██║  ██║███████║██║  ██╗
  * ╚══════╝╚══════╝╚═╝  ╚═╝  ╚═══╝  ╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
  */
-class Ai1wm_Export_Exception extends Exception {
 
+class Ai1wm_Export_Exception extends Exception
+{
 }

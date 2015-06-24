@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Copyright (C) 2014 ServMask Inc.
  *
@@ -23,8 +22,9 @@
  * ███████║███████╗██║  ██║ ╚████╔╝ ██║ ╚═╝ ██║██║  ██║███████║██║  ██╗
  * ╚══════╝╚══════╝╚═╝  ╚═╝  ╚═══╝  ╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
  */
-class Ai1wm_Logger {
 
+class Ai1wm_Logger
+{
 	/**
 	 * Log debug data
 	 *
@@ -42,11 +42,13 @@ class Ai1wm_Logger {
 		$data['memory_limit']          = ini_get( 'memory_limit' );
 		$data['memory_get_peak_usage'] = memory_get_peak_usage();
 		$data['memory_get_usage']      = memory_get_usage();
+		$data['ZipArchive']            = class_exists( 'ZipArchive' ) ? 1 : 0;
+		$data['ZLIB_installed']        = function_exists( 'gzopen' ) ? 1 : 0;
 		$data['PDO_available']         = class_exists( 'PDO' ) ? 1 : 0;
 		$data['site_url']              = site_url();
 		$data['home_url']              = home_url();
 
-		return update_site_option( $key, $data );
+		return update_option( $key, $data );
 	}
 
 	/**
@@ -55,7 +57,7 @@ class Ai1wm_Logger {
 	 * @return boolean
 	 */
 	public static function error( $key, array $data = array() ) {
-		return update_site_option( $key, $data );
+		return update_option( $key, $data );
 	}
 
 	/**
@@ -64,6 +66,6 @@ class Ai1wm_Logger {
 	 * @return boolean
 	 */
 	public static function info( $key, array $data = array() ) {
-		return update_site_option( $key, $data );
+		return update_option( $key, $data );
 	}
 }

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Copyright (C) 2014 ServMask Inc.
  *
@@ -23,19 +22,20 @@
  * ███████║███████╗██║  ██║ ╚████╔╝ ██║ ╚═╝ ██║██║  ██║███████║██║  ██╗
  * ╚══════╝╚══════╝╚═╝  ╚═╝  ╚═══╝  ╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
  */
-class Ai1wm_Report {
 
+class Ai1wm_Report
+{
 	/**
 	 * Submit customer report to ServMask.com
 	 *
 	 * @param  string  $email   User E-mail
 	 * @param  string  $message User Message
 	 * @param  integer $terms   User Accept Terms
-	 *
 	 * @return array
 	 */
 	public function report_problem( $email, $message, $terms ) {
 		$errors = array();
+
 		// Submit report to ServMask
 		if ( ! filter_var( $email, FILTER_VALIDATE_EMAIL ) ) {
 			$errors[] = 'Your email is not valid.';
@@ -48,14 +48,15 @@ class Ai1wm_Report {
 				AI1WM_REPORT_URL,
 				array(
 					'body' => array(
-						'email'             => $email,
-						'message'           => $message,
-						'export_options'    => json_encode( get_site_option( AI1WM_EXPORT_OPTIONS, array() ) ),
-						'error_handler'     => json_encode( get_site_option( AI1WM_ERROR_HANDLER, array() ) ),
-						'exception_handler' => json_encode( get_site_option( AI1WM_EXCEPTION_HANDLER, array() ) ),
+						'email'               => $email,
+						'message'             => $message,
+						'export_options'      => json_encode( get_option( AI1WM_EXPORT_OPTIONS, array() ) ),
+						'error_handler'       => json_encode( get_option( AI1WM_ERROR_HANDLER, array() ) ),
+						'exception_handler'   => json_encode( get_option( AI1WM_EXCEPTION_HANDLER, array() ) ),
 					),
 				)
 			);
+
 			if ( is_wp_error( $response ) ) {
 				$errors[] = 'Something went wrong: ' . $response->get_error_message();
 			}

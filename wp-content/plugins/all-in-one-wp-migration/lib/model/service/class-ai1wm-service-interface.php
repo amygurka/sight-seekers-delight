@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Copyright (C) 2014 ServMask Inc.
  *
@@ -23,9 +22,9 @@
  * ███████║███████╗██║  ██║ ╚████╔╝ ██║ ╚═╝ ██║██║  ██║███████║██║  ██╗
  * ╚══════╝╚══════╝╚═╝  ╚═╝  ╚═══╝  ╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
  */
-interface Ai1wm_Service_Interface {
 
+interface Ai1wm_Service_Interface
+{
 	public function import();
-
 	public function export();
 }
