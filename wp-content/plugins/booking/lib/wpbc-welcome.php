@@ -186,9 +186,28 @@ class WPBC_Welcome {
             }
             .wpbc-welcome-page .feature-section {
                 margin-top:20px;
+                border:none;                
             }
             .wpbc-welcome-page .feature-section div {
                 line-height: 1.5em;
+            }
+            .wpbc-welcome-page .feature-section .last-feature {
+                margin-right:0;
+            }
+            .about-wrap.wpbc-welcome-page .changelog {
+                margin-bottom: 10px;
+            }
+            .about-wrap.wpbc-welcome-page .feature-section h4 {
+                font-size: 1.2em;
+                margin-bottom: 0.6em;
+                margin-left: 0;
+                margin-right: 0;
+                margin-top: 1.4em;
+            }
+            .about-wrap.wpbc-welcome-page .feature-section {
+                overflow-x: hidden;
+                overflow-y: hidden;
+                padding-bottom: 20px;
             }
             @media (max-width: 782px) {      /* iPad mini and all iPhones  and other Mobile Devices */
                 .wpbc-welcome-page .feature-section.one-col > div, 
@@ -360,7 +379,10 @@ class WPBC_Welcome {
                                                                 <li style="margin-left: 0.5em;">**Greece** *by Dimitris Amanatiadis* [**100%** completed]</li>
                                                                 <li style="margin-left: 0.5em;">**Slovak** *by Lubomir Host, Martin Galdun, Martin Ambrus* [**100%** completed]</li>
                                                                 <li style="margin-left: 0.5em;">**Czech** *by Ales Dlask, Martin Ambrus* [**100%** completed]</li>
-                                                                <li style="margin-left: 0.5em;">**Croatian** *by Jirka Pitzmos* [**95%** completed]</li>
+                                                                <li style="margin-left: 0.5em;">**Croatian** *by Jirka Pitzmos*, *Borislav Bosnjak* [**100%** completed]</li>
+                                                                <li style="margin-left: 0.5em;">**Italian** *by Fabrizio Pecorelli, Astolfo Vesci* [**100%** completed]</li>
+                                                                <li style="margin-left: 0.5em;">**German** *by Stefan Fritsche, Dirk Gabler, Andreas Dupp* [**100%** completed]</li>
+                                                                <li style="margin-left: 0.5em;">**Swedish** *by Jan Österling, Ruben Salas* [**100%** completed]</li>
                                                             </ul>' 
                                                ), 
                                         array(  'h4'   => 'Own Calendar Skins', 

@@ -31,6 +31,20 @@ class Ai1wm_Import_File extends Ai1wm_Import_Abstract {
 			wp_die( 'Unable to process file upload.' );
 		}
 
+		// Set chunk
+		if ( isset( $this->args['chunk'] ) ) {
+			$chunk = (int) $this->args['chunk'];
+		} else {
+			$chunk = 0;
+		}
+
+		// Set chunks
+		if ( isset( $this->args['chunks'] ) ) {
+			$chunks = (int) $this->args['chunks'];
+		} else {
+			$chunks = 1;
+		}
+
 		// Set archive
 		if ( isset( $this->args['name'] ) ) {
 			$this->args['archive'] = $this->args['name'];

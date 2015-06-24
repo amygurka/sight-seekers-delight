@@ -52,12 +52,8 @@ class Ai1wm_Main_Controller {
 	 * @return Object Instance of this class
 	 */
 	public function activation_hook() {
-		// Generate plugin secret key
-		if ( false === get_site_option( AI1WM_SECRET_KEY, false, false ) ) {
-			update_site_option( AI1WM_SECRET_KEY, wp_generate_password( 12, false ) );
-		}
-
-		return $this;
+		// Generate secret key
+		$this->generate_secret_key();
 	}
 
 	/**
@@ -69,6 +65,17 @@ class Ai1wm_Main_Controller {
 		load_plugin_textdomain( AI1WM_PLUGIN_NAME, false, dirname( plugin_basename( __FILE__ ) ) );
 
 		return $this;
+	}
+
+	/**
+	 * Generate plugin secret key
+	 *
+	 * @return boolean
+	 */
+	public function generate_secret_key() {
+		if ( false === get_site_option( AI1WM_SECRET_KEY, false, false ) ) {
+			return update_site_option( AI1WM_SECRET_KEY, wp_generate_password( 12, false ) );
+		}
 	}
 
 	/**
@@ -89,8 +96,10 @@ class Ai1wm_Main_Controller {
 
 		add_action( 'admin_init', array( $this, 'router' ) );
 		add_action( 'admin_init', array( $this, 'create_folders' ) );
+		add_action( 'admin_init', array( $this, 'http_authentication' ) );
 		add_action( 'admin_head', array( $this, 'admin_head' ) );
 		add_action( 'get_header', array( $this, 'get_header' ) );
+		add_action( 'init',       array( $this, 'generate_secret_key' ) );
 
 		return $this;
 	}
@@ -333,6 +342,25 @@ class Ai1wm_Main_Controller {
 
 			fwrite( $handle, '<?php // silence is golden' );
 			fclose( $handle );
+		}
+	}
+
+	/**
+	 * Store HTTP authentication credentials
+	 *
+	 * @return void
+	 */
+	public function http_authentication() {
+		// Set username
+		if ( isset( $_SERVER['PHP_AUTH_USER'] ) ) {
+			update_site_option( AI1WM_AUTH_USER, $_SERVER['PHP_AUTH_USER'] );
+		} else if ( isset( $_SERVER['REMOTE_USER'] ) ) {
+			update_site_option( AI1WM_AUTH_USER, $_SERVER['REMOTE_USER'] );
+		}
+
+		// Set password
+		if ( isset( $_SERVER['PHP_AUTH_PW'] ) ) {
+			update_site_option( AI1WM_AUTH_PASSWORD, $_SERVER['PHP_AUTH_PW'] );
 		}
 	}
 
@@ -601,17 +629,37 @@ class Ai1wm_Main_Controller {
 		wp_enqueue_script(
 			'ai1wm-js-import',
 			Ai1wm_Template::asset_link( 'javascript/import.min.js' ),
-			array( 'jquery' )
+			array( 'plupload-all', 'jquery' )
 		);
 		wp_enqueue_style(
 			'ai1wm-css-import',
 			Ai1wm_Template::asset_link( 'css/import.min.css' )
 		);
 		wp_localize_script( 'ai1wm-js-import', 'ai1wm_uploader', array(
-			'url'                 => admin_url( 'admin-ajax.php?action=ai1wm_import' ),
+			'runtimes'            => 'html5,silverlight,flash,html4',
+			'browse_button'       => 'ai1wm-import-file',
+			'container'           => 'ai1wm-plupload-upload-ui',
+			'drop_element'        => 'ai1wm-drag-drop-area',
+			'file_data_name'      => 'upload-file',
+			'chunk_size'          => apply_filters( 'ai1wm_max_chunk_size', AI1WM_MAX_CHUNK_SIZE ),
 			'max_retries'         => apply_filters( 'ai1wm_max_chunk_retries', AI1WM_MAX_CHUNK_RETRIES ),
-			'ai1wm_archive_size'  => apply_filters( 'ai1wm_max_file_size', AI1WM_MAX_FILE_SIZE ),
-			'secret_key'          => get_site_option( AI1WM_SECRET_KEY, false, false ),
+			'url'                 => admin_url( 'admin-ajax.php?action=ai1wm_import' ),
+			'flash_swf_url'       => includes_url( 'js/plupload/plupload.flash.swf' ),
+			'silverlight_xap_url' => includes_url( 'js/plupload/plupload.silverlight.xap' ),
+			'multiple_queues'     => false,
+			'multi_selection'     => false,
+			'urlstream_upload'    => true,
+			'unique_names'        => true,
+			'multipart'           => true,
+			'multipart_params'    => array(
+				'provider'   => 'file',
+				'method'     => 'import',
+				'secret_key' => get_site_option( AI1WM_SECRET_KEY, false, false ),
+			),
+			'filters'             => array(
+				'ai1wm_archive_extension' => 'wpress',
+				'ai1wm_archive_size'      => apply_filters( 'ai1wm_max_file_size', AI1WM_MAX_FILE_SIZE ),
+			),
 		) );
 		wp_localize_script( 'ai1wm-js-import', 'ai1wm_feedback', array(
 			'ajax' => array(
@@ -635,6 +683,7 @@ class Ai1wm_Main_Controller {
 			'status' => array(
 				'url' => AI1WM_STORAGE_URL,
 			),
+			'secret_key' => get_site_option( AI1WM_SECRET_KEY, false, false ),
 			'oversize'   => sprintf(
 				__(
 					'The file that you are trying to import is over the maximum upload file size limit of <strong>%s</strong>.' .
@@ -658,7 +707,6 @@ class Ai1wm_Main_Controller {
 					),
 					AI1WM_ARCHIVE_TOOLS_URL
 			),
-			'secret_key' => get_site_option( AI1WM_SECRET_KEY, false, false ),
 		) );
 	}
 }

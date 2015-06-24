@@ -4,7 +4,7 @@ Donate link: http://wpbookingcalendar.com/buy/
 Tags:  booking, booking calendar, accommodations, appointment, availability, availability calendar, bed and breakfast, booking form, booking system, bookings, calendar, contact form, event, event calendar, events, hotel, meeting, online booking calendar, online reservation, reservation, reservation plugin, rooms, schedule, scheduling
 Requires at least: 3.3
 Tested up to: 4.2
-Stable tag: 5.4
+Stable tag: 5.4.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -152,6 +152,30 @@ If you have any further questions, please fill free to <a href="mailto:support@w
 11. **Calendar Skins**. Select calendar skin for better fitting to your web-site design.
 
 == Changelog ==
+= 5.4.2 =
+- Features and issue fixings in All versions:
+ * Updated Swedish translation [100% Completed] by Jan Österling
+ * Updated Norwegian translation [100% Completed] by Patrick Schneider
+ * CSS improvements.
+- Personal / Business Small / Business Medium / Business Large / MultiUser versions features:
+ * Updated **"Sage Pay"** payment gateway for using new protocol v3.00 instead of v2.23 *(Business Small/Medium/Large, MultiUser)*
+ * **Fix** issue of correctly showing currency (GBP) symbol at the payment form. *(Business Small/Medium/Large, MultiUser)*
+ * **Fix** issue of correctly showing additional cost of the booking, if visitor edit this booking (after  clicking on edit booking link from email), and this booking relative to  the booking resource,  that have as default some custom booking form (not standard booking form). *(Business Medium/Large, MultiUser)*
+
+= 5.4.1 =
+- Features and issue fixings in All versions:
+ * Updated Italian translation [100% Completed] by Fabrizio Pecorelli, Astolfo Vesci
+ * Updated Russian translation [100% Completed] by Arm. 
+ * Updated Croatian translation [100% Completed] by Borislav Bosnjak. 
+ * Updated German translation [100% Completed] by Stefan Fritsche, Dirk Gabler, Andreas Dupp. 
+ * Updated Swedish translation [100% Completed] by Jan Österling, Ruben Salas 
+ * **Fix** CSS issue on welcome new update page.
+- Personal / Business Small / Business Medium / Business Large / MultiUser versions features:
+ * **Fix** ability to edit, cancel or send payment request for the booking by visitors, if was activating option **Load JS and CSS files only on specific pages** at general booking settings page. *(Personal, Business Small/Medium/Large, MultiUser)*
+ * **Fix** issue of not showing calendar, if in availability settings was applying season filter, that do not have any days. *(Business Medium/Large, MultiUser)*
+ * **Fix** issue of not apply conditional season filter, if this filter have only "Tuesday" day selected there. *(Business Medium/Large, MultiUser)*
+ * **Fix** issue of showing bookings only from the specific regular user, when user try to open 2nd or higher page at Booking Listing page. *(MultiUser)*
+
 = 5.4 =
 - Features and issue fixings in All versions:
  * **New**. **Google Calendar Events importing**. Using new Google Calendar API v3. Activate and configure different parameters for the Google Calendar import.
@@ -454,12 +478,12 @@ Plugin supports following languages:
 - Danish [100% Completed]
 - Czech [100% Completed]
 - Slovak [100% Completed]
-- German [95% Completed]
-- Italian [95% Completed]
-- Swedish [95% Completed]   
+- Italian [100% Completed]
+- Croatian [100% Completed]    
+- German [100% Completed]
+- Swedish [100% Completed]   
+- Norwegian [100% Completed]
 - Brazilian Portuguese [95% Completed]    
-- Croatian [95% Completed]    
-- Norwegian [69% Completed]
 - Hebrew [17% Completed]
 - Belorussian [12% Completed]
 

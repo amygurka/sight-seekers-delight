@@ -38,8 +38,6 @@
 				<input type="checkbox" id="ai1wm-maintenance-mode" name="options[maintenance-mode]" />
 				<label for="ai1wm-maintenance-mode"><?php _e( 'Put the site in <strong>maintenance mode</strong> while exporting', AI1WM_PLUGIN_NAME ); ?></label>
 			</li>
-
-			<?php do_action( 'ai1wm_export_advanced_options' ); ?>
 		</ul>
 	</div>
 </div>

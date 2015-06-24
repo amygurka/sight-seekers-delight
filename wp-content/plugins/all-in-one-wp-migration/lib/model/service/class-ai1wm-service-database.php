@@ -137,6 +137,12 @@ class Ai1wm_Service_Database implements Ai1wm_Service_Interface
 			$user = array();
 		}
 
+		// Get HTTP user
+		$auth_user = get_site_option( AI1WM_AUTH_USER, false, false );
+
+		// Get HTTP password
+		$auth_password = get_site_option( AI1WM_AUTH_PASSWORD, false, false );
+
 		// Get secret key
 		$secret_key = get_site_option( AI1WM_SECRET_KEY, false, false );
 
@@ -181,6 +187,12 @@ class Ai1wm_Service_Database implements Ai1wm_Service_Interface
 				Ai1wm_Log::error( 'Exception while importing user identity: ' . $result->get_error_message() );
 			}
 		}
+
+		// Set the new HTTP user
+		update_site_option( AI1WM_AUTH_USER, $auth_user );
+
+		// Set the new HTTP password
+		update_site_option( AI1WM_AUTH_PASSWORD, $auth_password );
 
 		// Set the new secret key value
 		update_site_option( AI1WM_SECRET_KEY, $secret_key );

@@ -2135,15 +2135,16 @@ if ( ! defined( 'ABSPATH' ) ) exit;                                             
 
         for ( $i=0 ; $i < $formdata_array_count ; $i++) {
             $elemnts = explode('^',$formdata_array[$i]);
+            if ( count( $elemnts ) > 2 ) {
+                $type = $elemnts[0];
+                $element_name = $elemnts[1];
+                $value = $elemnts[2];
 
-            $type = $elemnts[0];
-            $element_name = $elemnts[1];
-            $value = $elemnts[2];
+                $value = wpbc_clean_parameter( $value );
 
-            $value = wpbc_clean_parameter( $value );
-
-            // convert to new value
-            $clean_formdata .= $type . '^' . $element_name . '^' . $value . '~';
+                // convert to new value
+                $clean_formdata .= $type . '^' . $element_name . '^' . $value . '~';
+            }
         }
 
         $clean_formdata = substr($clean_formdata, 0, -1);

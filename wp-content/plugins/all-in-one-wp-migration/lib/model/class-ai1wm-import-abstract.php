@@ -41,6 +41,8 @@ abstract class Ai1wm_Import_Abstract {
 	public function start() {
 		// Set default progress
 		Ai1wm_Status::set( array(
+			'total'     => 0,
+			'processed' => 0,
 			'type'      => 'info',
 			'message'   => __( 'Unpacking archive...', AI1WM_PLUGIN_NAME ),
 		) );
@@ -66,8 +68,7 @@ abstract class Ai1wm_Import_Abstract {
 			// Parse the package file
 			$service = new Ai1wm_Service_Package( $this->args );
 			if ( $service->import() ) {
-				// Next method
-				return array( 'method' => 'confirm' );
+				$this->route_to( 'confirm' );
 			} else {
 				throw new Ai1wm_Import_Exception( __( 'Invalid package.json file.', AI1WM_PLUGIN_NAME ) );
 			}
@@ -154,8 +155,15 @@ abstract class Ai1wm_Import_Abstract {
 		// close the archive file
 		$archive->close();
 
-		// Next method
-		return array( 'method' => 'truncate', 'total' => $total );
+		// Set progress
+		Ai1wm_Status::set( array(
+			'total'   => $total,
+			'type'    => 'info',
+			'message' => __( 'Done retrieving a list of all WordPress files.', AI1WM_PLUGIN_NAME ),
+		) );
+
+		// Redirect
+		$this->route_to( 'truncate' );
 	}
 
 	/**
@@ -167,8 +175,8 @@ abstract class Ai1wm_Import_Abstract {
 		// Enable maintenance mode
 		Ai1wm_Maintenance::enable();
 
-		// Next method
-		return array( 'method' => 'content', 'total' => $this->args['total'] );
+		// Redirect
+		$this->route_to( 'content' );
 	}
 
 	/**
@@ -178,11 +186,9 @@ abstract class Ai1wm_Import_Abstract {
 	 */
 	public function content() {
 		// Total and processed files
-		$total     = @(int) $this->args['total'];
-		$processed = @(int) $this->args['processed'];
-
-		// What percent of files have we processed?
-		$progress  = @(int) ( ( $processed / $total ) * 100 ) or $progress = 4;
+		$total     = Ai1wm_Status::get( 'total' );
+		$processed = Ai1wm_Status::get( 'processed' );
+		$progress  = (int) ( ( $processed / $total ) * 100 ) or $progress = 4;
 
 		// Set progress
 		Ai1wm_Status::set( array(
@@ -222,16 +228,21 @@ abstract class Ai1wm_Import_Abstract {
 		}
 
 		// Set new file map pointer
-		$pointer = $archive->get_file_pointer();
+		$this->pointer( $archive->get_file_pointer() );
 
 		// Close the archive file
 		$archive->close();
 
-		// Next method
+		// Set progress
+		Ai1wm_Status::set( array(
+			'processed' => $processed,
+		) );
+
+		// Redirect
 		if ( $completed ) {
-			return array( 'method' => 'database' );
+			$this->route_to( 'database' );
 		} else {
-			return array( 'method' => 'content', 'pointer' => $pointer, 'total' => $total, 'processed' => $processed );
+			$this->route_to( 'content' );
 		}
 	}
 
@@ -243,8 +254,7 @@ abstract class Ai1wm_Import_Abstract {
 	public function database() {
 		// Set exclude database
 		if ( ! is_file( $this->storage()->database() ) ) {
-			// Next method
-			return array( 'method' => 'finish' );
+			return $this->route_to( 'finish' );
 		}
 
 		// Display progress
@@ -256,8 +266,8 @@ abstract class Ai1wm_Import_Abstract {
 		$service  = new Ai1wm_Service_Database( $this->args );
 		$service->import();
 
-		// Next method
-		return array( 'method' => 'finish' );
+		// Redirect
+		$this->route_to( 'finish' );
 	}
 
 	/**
@@ -283,13 +293,19 @@ abstract class Ai1wm_Import_Abstract {
 
 		// Disable maintenance mode
 		Ai1wm_Maintenance::disable();
-
-		// Next method
-		return array( 'method' => 'clean' );
 	}
 
 	/**
-	 * Clean storage directory
+	 * Stop import and clean storage
+	 *
+	 * @return void
+	 */
+	public function stop() {
+		$this->storage->clean();
+	}
+
+	/**
+	 * Clean storage path
 	 *
 	 * @return void
 	 */
@@ -304,75 +320,6 @@ abstract class Ai1wm_Import_Abstract {
 	 */
 	abstract public function import();
 
-	protected function ensure_file_can_be_created( $path ) {
-		$path = WP_CONTENT_DIR . DIRECTORY_SEPARATOR . $path;
-		$path = wp_normalize_path( $path );
-
-		// does the file already exist?
-		if ( file_exists( $path ) ) {
-			// check if we can overwrite the file
-			if ( false === is_writable( $path ) ) {
-				throw new Ai1wm_Import_Exception(
-					sprintf(
-						__(
-							'The plugin cannot write to %s. FTP to your server, and change ' .
-							'file\'s permission to either 664 or 666, then try again.',
-							AI1WM_PLUGIN_NAME
-						),
-						$path
-					)
-				);
-			}
-			return true;
-		}
-
-		// the file doesn't exist, first we need to check if the path to the
-		// file exist
-		$path_to_file = dirname( $path );
-		if ( file_exists( $path_to_file ) ) {
-			// check if we can create a file
-			if ( false === is_writable( $path_to_file ) || false === is_executable( $path_to_file ) ){
-				throw new Ai1wm_Import_Exception(
-					sprintf(
-						__(
-							'The plugin cannot write to %s. FTP to your server, and change ' .
-							'folder\'s permission to either 775 or 777, then try again.',
-							AI1WM_PLUGIN_NAME
-						),
-						$path_to_file
-					)
-				);
-			}
-			return true;
-		}
-
-		$max_depth_level = 2048;
-
-		// the path doesn't exist, find the parent that exists
-		while ( $max_depth_level > 0 ) {
-			if ( file_exists( $path_to_file ) ) {
-				break;
-			}
-			$path_to_file = dirname( $path_to_file );
-			$max_checks--;
-		}
-
-		// check if we can create a folder in the parent that exists
-		if ( false === is_writable( $path_to_file ) || false === is_executable( $path_to_file ) ){
-			throw new Ai1wm_Import_Exception(
-				sprintf(
-					__(
-						'The plugin cannot write to %s. FTP to your server, and change ' .
-						'folder\'s permission to either 775 or 777, then try again.',
-						AI1WM_PLUGIN_NAME
-					),
-					$path_to_file
-				)
-			);
-		}
-		return true;
-	}
-
 	/**
 	 * Validate archive and WP_CONTENT_DIR permissions
 	 *
@@ -380,31 +327,43 @@ abstract class Ai1wm_Import_Abstract {
 	 */
 	protected function validate() {
 		if ( is_file( $this->storage()->package() ) ) {
-			// go over all files in the archive and ensure we can write to the file
-			// Open the archive file for reading
-			$archive = new Ai1wm_Extractor( $this->storage()->archive() );
+			// Set exclude filters
+			$exclude = apply_filters( 'ai1wm_exclude_content_from_import', array(
+				'plugins' . DIRECTORY_SEPARATOR . 'all-in-one-wp-migration',
+				'plugins' . DIRECTORY_SEPARATOR . 'all-in-one-wp-migration-dropbox-extension',
+				'plugins' . DIRECTORY_SEPARATOR . 'all-in-one-wp-migration-gdrive-extension',
+				'plugins' . DIRECTORY_SEPARATOR . 'all-in-one-wp-migration-s3-extension',
+				'plugins' . DIRECTORY_SEPARATOR . 'all-in-one-wp-migration-multisite-extension',
+				'plugins' . DIRECTORY_SEPARATOR . 'all-in-one-wp-migration-unlimited-extension',
+				'plugins' . DIRECTORY_SEPARATOR . 'all-in-one-wp-migration-pro-extension',
+				'plugins' . DIRECTORY_SEPARATOR . 'all-in-one-wp-migration-ftp-extension',
+			) );
 
-			// Set the file pointer to the one that we have saved
-			$archive->set_file_pointer( null, $this->pointer() );
+			// Iterate over WP_CONTENT_DIR directory
+			$iterator = new RecursiveIteratorIterator(
+				new Ai1wm_Recursive_Exclude_Filter(
+					new Ai1wm_Recursive_Directory_Iterator(
+						WP_CONTENT_DIR
+					),
+					$exclude
+				),
+				RecursiveIteratorIterator::SELF_FIRST
+			);
 
-			while ( $archive->has_not_reached_eof() ) {
-				// Extract a file from archive to wp_content_dir
-				$meta = $archive->get_one_file_header( array(
-					AI1WM_PACKAGE_NAME,
-					AI1WM_DATABASE_NAME,
-				) );
-
-				if ( false !== $meta ) {
-					$this->ensure_file_can_be_created( $meta['path'] );
+			foreach ( $iterator as $item ) {
+				if ( ! is_readable( $item->getPathname() ) || ! is_writable( $item->getPathname() ) ) {
+					throw new Ai1wm_Import_Exception(
+						sprintf(
+							__(
+								'Ensure that file permissions are correctly set-up - 775 or 777 to <strong>%s</strong> ' .
+								'directory and all files and folders that it contains.',
+								AI1WM_PLUGIN_NAME
+							),
+							WP_CONTENT_DIR
+						)
+					);
 				}
 			}
-
-			// Set new file map pointer
-			$pointer = $archive->get_file_pointer();
-			@fseek( $archive->get_handle(), 0, SEEK_SET );
-
-			// Close the archive file
-			$archive->close();
 
 			return true;
 		}
@@ -430,15 +389,71 @@ abstract class Ai1wm_Import_Abstract {
 	}
 
 	/**
-	 * Get filemap pointer
+	 * Get filemap pointer or set new one
 	 *
-	 * @return integer
+	 * @param  int $pointer Set new file pointer
+	 * @return int
 	 */
 	protected function pointer( $pointer = null ) {
 		if ( ! isset( $this->args['pointer'] ) ) {
 			$this->args['pointer'] = 0;
+		} else if ( ! is_null( $pointer ) ) {
+			$this->args['pointer'] = $pointer;
 		}
 
 		return (int) $this->args['pointer'];
+	}
+
+	/**
+	 * Route to method
+	 *
+	 * @param  string $method Name of the method
+	 * @return void
+	 */
+	protected function route_to( $method ) {
+		// Redirect arguments
+		$this->args['method']     = $method;
+		$this->args['secret_key'] = get_site_option( AI1WM_SECRET_KEY, false, false );
+
+		// Check the status of the import, maybe we need to stop it
+		if ( ! is_file( $this->storage()->archive() ) ) {
+			exit;
+		}
+
+		$headers = array();
+
+		// HTTP authentication
+		$auth_user     = get_site_option( AI1WM_AUTH_USER, false, false );
+		$auth_password = get_site_option( AI1WM_AUTH_PASSWORD, false, false );
+		if ( ! empty( $auth_user ) && ! empty( $auth_password ) ) {
+			$headers['Authorization'] = 'Basic ' . base64_encode( $auth_user . ':' . $auth_password );
+		}
+
+		// Resolve domain
+		$url = admin_url( 'admin-ajax.php?action=ai1wm_import' );
+		$parsed_url = parse_url( $url, PHP_URL_HOST );
+
+		if ( false !== $parsed_url ) {
+			$ip = gethostbyname( $parsed_url );
+
+			if ( $ip !== $parsed_url ) {
+				$url = preg_replace( sprintf( '/%s/', preg_quote( $parsed_url, '-' ) ), $ip, $url, 1 );
+				$headers['Host'] = $parsed_url;
+			}
+		}
+
+		// HTTP request
+		remove_all_filters( 'http_request_args' );
+		wp_remote_post(
+			$url,
+			array(
+				'timeout'    => apply_filters( 'ai1wm_http_timeout', 5 ),
+				'blocking'   => false,
+				'sslverify'  => apply_filters( 'https_local_ssl_verify', false ),
+				'user-agent' => 'ai1wm',
+				'body'       => $this->args,
+				'headers'    => $headers,
+			)
+		);
 	}
 }

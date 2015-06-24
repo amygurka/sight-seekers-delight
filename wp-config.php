@@ -16,6 +16,8 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
+define('WP_CACHE', true); //Added by WP-Cache Manager
+define( 'WPCACHEHOME', '/Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/' ); //Added by WP-Cache Manager
 switch ($_SERVER['SERVER_NAME']) {
   case 'localhost' :
     define('DB_NAME', 'ssd');

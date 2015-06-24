@@ -232,8 +232,4 @@ abstract class Ai1wm_Archiver {
 		}
 	}
 
-	public function get_handle() {
-		return $this->file_handle;
-	}
-
 }

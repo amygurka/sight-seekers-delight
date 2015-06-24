@@ -362,12 +362,16 @@ input[type="radio"] {
     margin:0;
 }
 .wpdevbk .btn-group .button.active {
-    background-color: #E6E6E6;
+    background-color: #f0f0f0;
     background-image: none;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15) inset, 0 1px 2px rgba(0, 0, 0, 0.05) !important;                
+    
     color: rgba(0, 0, 0, 0.5);
     outline: 0 none;
     border-color: #CCCCCC;
+    
+    box-shadow:0 0 1px 1px #d7d7d7 inset;
+    color:#777;
 }
 /* Sticks */
 .wpbc_stick_left {
@@ -978,8 +982,11 @@ span.bktypecount a {
     text-shadow: -1px 1px 0 #FFF;
 }
 .bookingpage .meta-box .postbox .handlediv {
-    background: url("../../../../wp-admin/images/menu-bits.gif?ver=20100610") no-repeat scroll left -111px transparent;
-    background: url("../../../../wp-admin/images/arrows.png") no-repeat scroll 6px 7px transparent;
+/*    background: url("../../../../wp-admin/images/menu-bits.gif?ver=20100610") no-repeat scroll left -111px transparent;*/
+    background: url("../../../../wp-admin/images/arrows.png") no-repeat scroll 5px -27px transparent;
+}
+.bookingpage .meta-box .postbox.closed .handlediv {
+    background-position:5px 10px;
 }
 .bookingpage .meta-box .postbox .handlediv:hover {
     cursor: pointer !important;
@@ -1726,10 +1733,10 @@ a.wpbc-season-filter-link {
     border-bottom: none !important;
 }
 #menu-wpdevplugin .nav-tab {
-    border-radius: 5px 5px 0 0;
-    -moz-border-radius: 5px 5px 0 0;
-    -webkit-border-top-left-radius: 5px;
-    -webkit-border-top-right-radius: 5px;
+    border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
     border-color: #D5D5D5 #D5D5D5 #BBC #D5D5D5;
     border-style: solid;
     border-width: 1px 1px 0;
@@ -1761,7 +1768,7 @@ a.wpbc-season-filter-link {
 }
 #menu-wpdevplugin .nav-tab-active, 
 #menu-wpdevplugin a.nav-tab-active:hover {
-    border-color: #CCC;
+    border-color: #777;
     border-bottom-color: #AAB;
     background: none repeat scroll 0 0 #7A7A88;
     text-shadow: 0 0px 0 #111;
@@ -1804,9 +1811,9 @@ a.wpbc-season-filter-link {
 .booking-submenu-tab-selected:hover,
 .wpdevbk .booking-submenu-tab-selected,
 .wpdevbk .booking-submenu-tab-selected:hover {
-    border: #DDD solid 1px;
+    border: #777 solid 1px;
     border-bottom: 1px solid #888;
-    background: #999;
+    background: #7a7a88;
     color: #FFF !important;
     text-shadow: 0 -1px 0 #555;
 }
@@ -1884,11 +1891,11 @@ a.wpbc-season-filter-link {
     clear: both;
     border: 1px solid #BBC;
     border-top: 1px solid #CCC;
-    -moz-border-radius: 0px 0px 5px 5px;
+    -moz-border-radius: 0px 0px 3px 3px;
     -moz-box-shadow: 0 1px 1px #DDD;
-    -webkit-border-radius: 0px 0px 5px 5px;
+    -webkit-border-radius: 0px 0px 3px 3px;
     -webkit-box-shadow: 0 1px 1px #DDD;
-    border-radius: 0px 0px 5px 5px;
+    border-radius: 0px 0px 3px 3px;
     box-shadow: 0 1px 1px #DDD;
     background: #EEE;
     margin-top: -2px;
@@ -2123,6 +2130,9 @@ input.filter_avalaibility {
     -moz-box-sizing: content-box;
     -webkit-box-sizing: content-box;
  }
+.wpdevbk .btn-group.btn-group-vertical .button.active {
+    box-shadow: 0px 1px 3px 1px #e5e5e5 inset !important;
+}
 .wpdevbk #menu-wpdevplugin,
 .booking-submenu-tab-container {
     margin-left: 50px;
@@ -2479,6 +2489,9 @@ a.first_day_in_bookin {
 }
 .wpdevbk.popover.left .arrow {
     left:auto;
+}
+.wpdevbk.tooltip {
+    z-index:9999;
 }
 .calendar_timeline_frame .calendar_overview_cell.today_date {
     /*background: none repeat scroll 0 0 #9F5 !important;*/

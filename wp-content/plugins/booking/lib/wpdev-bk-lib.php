@@ -690,6 +690,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;                                             
 
     // Get Default params or from Request
     function wpdev_get_args_from_request_in_bk_listing(){
+//debuge($_REQUEST);        
         $num_per_page_check = get_bk_option( 'bookings_num_per_page');
         if (empty( $num_per_page_check)) {
             $num_per_page_check = '10';
@@ -712,6 +713,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;                                             
 		'page_num' =>           (isset($_REQUEST['page_num'])) ? wpbc_clean_parameter( $_REQUEST['page_num'] ):'1',
                 'page_items_count' =>   (isset($_REQUEST['page_items_count'])) ? wpbc_clean_parameter( $_REQUEST['page_items_count'] ):$num_per_page_check,
 	);
+//debuge($args, $_REQUEST['wh_booking_type'] );
         return $args;
     }
     
@@ -901,7 +903,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;                                             
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     // S Q L    B o o k i n g    L i s t i n g
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    function wpdev_sql_get_booking_lising( $args ){
+    function wpdev_sql_get_booking_listing( $args ){
 	global $wpdb;
         $num_per_page_check = get_bk_option( 'bookings_num_per_page');
         if (empty( $num_per_page_check)) {
@@ -1079,8 +1081,8 @@ if ( ! defined( 'ABSPATH' ) ) exit;                                             
     function wpdev_get_bk_listing_structure_engine( $args ){
         global $wpdb;
 ///debuge($_REQUEST);
-        $sql_boking_listing = wpdev_sql_get_booking_lising( $args );
-//debuge($sql_boking_listing);
+        $sql_boking_listing = wpdev_sql_get_booking_listing( $args );
+//debuge($args, $sql_boking_listing);
         $sql_start_count    = $sql_boking_listing[0];
         $sql_start_select   = $sql_boking_listing[1];
         $sql       = $sql_boking_listing[2];
@@ -1313,7 +1315,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;                                             
             $bookings_count = $bk_listing[2];
             $page_num       = $bk_listing[3];
             $page_items_count= $bk_listing[4];
-            //debuge($args, count($bookings),$bookings, $booking_types, $_REQUEST);
+//debuge($args, count($bookings),$bookings, $booking_types, $_REQUEST);
 
             booking_listing_table($bookings , $booking_types);                      // Show the bookings listing table
             wpdevbk_show_pagination($bookings_count, $page_num, $page_items_count); // Show Pagination        

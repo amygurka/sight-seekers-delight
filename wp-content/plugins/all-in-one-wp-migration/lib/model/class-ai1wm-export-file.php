@@ -26,6 +26,9 @@
 class Ai1wm_Export_File extends Ai1wm_Export_Abstract {
 
 	public function export() {
+		// Set progress
+		Ai1wm_Status::set( array( 'message' => __( 'Renaming exported file...', AI1WM_PLUGIN_NAME ) ) );
+
 		// Close achive file
 		$archive = new Ai1wm_Compressor( $this->storage()->archive() );
 
@@ -53,11 +56,8 @@ class Ai1wm_Export_File extends Ai1wm_Export_Abstract {
 						size_format( filesize( $this->storage()->backup() ) )
 					)
 				),
-				$this->storage()->status() // status.php file
+				$this->storage()->status() // status.log file
 			);
 		}
-
-		// Next method
-		return array( 'method' => 'clean' );
 	}
 }

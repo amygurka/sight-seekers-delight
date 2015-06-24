@@ -36,7 +36,7 @@ class Ai1wm_Backup {
 		try {
 			$iterator = new RegexIterator(
 				new DirectoryIterator( AI1WM_BACKUPS_PATH ),
-				'/^(.+)-(\d+)-(\d+)-(\d+)\.wpress(\.bin)?$/',
+				'/^(.+)-(\d+)-(\d+)-(\d+)\.wpress$/',
 				RegexIterator::GET_MATCH
 			);
 

@@ -314,8 +314,18 @@ function wpbc_is_load_CSS_JS_on_this_page() {
         $booking_pages_for_load_js_css = get_bk_option( 'booking_pages_for_load_js_css' );
         
         $booking_pages_for_load_js_css = preg_split('/[\r\n]+/', $booking_pages_for_load_js_css, -1, PREG_SPLIT_NO_EMPTY);
-        
-        if (  ( ! empty($booking_pages_for_load_js_css ) ) && ( ! in_array( $_SERVER['REQUEST_URI'], $booking_pages_for_load_js_css ) )  )
+
+        $request_uri = $_SERVER['REQUEST_URI'];                                 // FixIn:5.4.1
+        if ( strpos( $request_uri, 'booking_hash=') !== false ) {
+            $request_uri = parse_url($request_uri);
+            if (  ( ! empty($request_uri ) ) && ( isset($request_uri['path'] ) )  ){
+                $request_uri = $request_uri['path'];
+            } else {
+                $request_uri = $_SERVER['REQUEST_URI'];
+            }
+        }
+
+        if (  ( ! empty($booking_pages_for_load_js_css ) ) && ( ! in_array( $request_uri, $booking_pages_for_load_js_css ) )  )
                 return false;
     }
 

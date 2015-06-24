@@ -293,6 +293,7 @@ function init_datepick_cal(bk_type,  date_approved_par, my_num_month, start_day_
                     gotoCurrent: false,
                     hideIfNoPrevNext:true,
                     rangeSelect:isRangeSelect,
+                    // showWeeks: true, 
                     useThemeRoller :false // ui-cupertino.datepick.css
                 }
         );

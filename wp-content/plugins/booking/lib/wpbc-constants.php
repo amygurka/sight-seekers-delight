@@ -24,8 +24,8 @@ if (!defined('WP_BK_SHOW_DEPOSIT_AND_TOTAL_PAYMENT'))   define('WP_BK_SHOW_DEPOS
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //   SYSTEM  CONSTANTS                        //////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-if (!defined('WP_BK_VERSION_NUM'))      define('WP_BK_VERSION_NUM',     '5.4' );
-if (!defined('WP_BK_MINOR_UPDATE'))     define('WP_BK_MINOR_UPDATE',    ! true );    
+if (!defined('WP_BK_VERSION_NUM'))      define('WP_BK_VERSION_NUM',     '5.4.2' );
+if (!defined('WP_BK_MINOR_UPDATE'))     define('WP_BK_MINOR_UPDATE',    true );    
 if (!defined('IS_USE_WPDEV_BK_CACHE'))  define('IS_USE_WPDEV_BK_CACHE', true );    
 if (!defined('WP_BK_DEBUG_MODE'))       define('WP_BK_DEBUG_MODE',      false );
 if (!defined('WP_BK_MIN'))              define('WP_BK_MIN',             false );//TODO: Finish  with  this contstant, right now its not working correctly with TRUE status
