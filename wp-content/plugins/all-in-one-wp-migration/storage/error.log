@@ -1,0 +1,36 @@
+[Jun 28 2015 21:12:37] ERROR_HANDLER 
+Number:  2
+Message: gzinflate(): data error
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/class-http.php
+Line:    2116
+-------------------------------------------- 
+[Jun 28 2015 21:58:22] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/google-calendar-test/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jun 28 2015 22:01:11] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/google-calendar-test/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jun 28 2015 22:35:16] ERROR_HANDLER 
+Number:  2
+Message: fopen(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/localhost:8888/sightseekersdelight_wp_cache_gc.txt): failed to open stream: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1261
+-------------------------------------------- 
+[Jun 28 2015 22:35:16] ERROR_HANDLER 
+Number:  2
+Message: fclose() expects parameter 1 to be resource, boolean given
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1262
+-------------------------------------------- 
+[Jun 28 2015 22:35:16] ERROR_HANDLER 
+Number:  2
+Message: unlink(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/localhost:8888/sightseekersdelight_wp_cache_gc.txt): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1289
+-------------------------------------------- 
