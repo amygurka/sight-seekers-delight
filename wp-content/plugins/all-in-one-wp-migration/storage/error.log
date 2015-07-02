@@ -34,3 +34,561 @@ Message: unlink(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/l
 File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
 Line:    1289
 -------------------------------------------- 
+[Jun 28 2015 23:28:24] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/book-a-tour/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jun 28 2015 23:36:09] ERROR_HANDLER 
+Number:  2
+Message: fopen(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/localhost:8888/sightseekersdelight_wp_cache_gc.txt): failed to open stream: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1261
+-------------------------------------------- 
+[Jun 28 2015 23:36:09] ERROR_HANDLER 
+Number:  2
+Message: fclose() expects parameter 1 to be resource, boolean given
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1262
+-------------------------------------------- 
+[Jun 28 2015 23:36:09] ERROR_HANDLER 
+Number:  2
+Message: unlink(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/localhost:8888/sightseekersdelight_wp_cache_gc.txt): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1289
+-------------------------------------------- 
+[Jun 28 2015 23:40:37] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/travel-services/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jun 28 2015 23:40:48] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/guides/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jun 28 2015 23:41:11] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/blog/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jun 28 2015 23:41:32] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/contact/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jun 28 2015 23:43:10] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/home/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jun 28 2015 23:43:10] ERROR_HANDLER 
+Number:  2
+Message: opendir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/meta/): failed to open dir: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1162
+-------------------------------------------- 
+[Jun 28 2015 23:43:10] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/66/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jun 28 2015 23:43:10] ERROR_HANDLER 
+Number:  2
+Message: opendir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/meta/): failed to open dir: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1162
+-------------------------------------------- 
+[Jun 28 2015 23:43:10] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/86/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jun 28 2015 23:43:10] ERROR_HANDLER 
+Number:  2
+Message: opendir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/meta/): failed to open dir: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1162
+-------------------------------------------- 
+[Jun 28 2015 23:43:10] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/85/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jun 28 2015 23:43:10] ERROR_HANDLER 
+Number:  2
+Message: opendir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/meta/): failed to open dir: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1162
+-------------------------------------------- 
+[Jun 28 2015 23:43:10] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/84/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jun 28 2015 23:43:10] ERROR_HANDLER 
+Number:  2
+Message: opendir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/meta/): failed to open dir: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1162
+-------------------------------------------- 
+[Jun 28 2015 23:43:10] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/83/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jun 28 2015 23:43:10] ERROR_HANDLER 
+Number:  2
+Message: opendir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/meta/): failed to open dir: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1162
+-------------------------------------------- 
+[Jun 28 2015 23:43:10] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/59/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jun 28 2015 23:43:10] ERROR_HANDLER 
+Number:  2
+Message: opendir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/meta/): failed to open dir: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1162
+-------------------------------------------- 
+[Jun 28 2015 23:43:10] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/61/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jun 28 2015 23:43:10] ERROR_HANDLER 
+Number:  2
+Message: opendir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/meta/): failed to open dir: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1162
+-------------------------------------------- 
+[Jun 28 2015 23:43:10] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/62/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jun 28 2015 23:43:10] ERROR_HANDLER 
+Number:  2
+Message: opendir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/meta/): failed to open dir: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1162
+-------------------------------------------- 
+[Jun 28 2015 23:43:10] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/63/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jun 28 2015 23:43:10] ERROR_HANDLER 
+Number:  2
+Message: opendir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/meta/): failed to open dir: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1162
+-------------------------------------------- 
+[Jun 28 2015 23:43:10] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/64/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jun 28 2015 23:43:10] ERROR_HANDLER 
+Number:  2
+Message: opendir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/meta/): failed to open dir: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1162
+-------------------------------------------- 
+[Jun 28 2015 23:43:10] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/65/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jun 28 2015 23:43:10] ERROR_HANDLER 
+Number:  2
+Message: opendir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/meta/): failed to open dir: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1162
+-------------------------------------------- 
+[Jun 28 2015 23:43:27] ERROR_HANDLER 
+Number:  2
+Message: fopen(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/meta/7707098275590869fc8be46.29815823.tmp): failed to open stream: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    883
+-------------------------------------------- 
+[Jun 28 2015 23:45:39] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/home/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jun 28 2015 23:45:39] ERROR_HANDLER 
+Number:  2
+Message: opendir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/meta/): failed to open dir: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1162
+-------------------------------------------- 
+[Jun 28 2015 23:45:39] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/66/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jun 28 2015 23:45:39] ERROR_HANDLER 
+Number:  2
+Message: opendir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/meta/): failed to open dir: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1162
+-------------------------------------------- 
+[Jun 28 2015 23:45:39] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/86/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jun 28 2015 23:45:39] ERROR_HANDLER 
+Number:  2
+Message: opendir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/meta/): failed to open dir: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1162
+-------------------------------------------- 
+[Jun 28 2015 23:45:39] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/85/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jun 28 2015 23:45:39] ERROR_HANDLER 
+Number:  2
+Message: opendir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/meta/): failed to open dir: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1162
+-------------------------------------------- 
+[Jun 28 2015 23:45:39] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/84/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jun 28 2015 23:45:39] ERROR_HANDLER 
+Number:  2
+Message: opendir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/meta/): failed to open dir: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1162
+-------------------------------------------- 
+[Jun 28 2015 23:45:39] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/83/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jun 28 2015 23:45:39] ERROR_HANDLER 
+Number:  2
+Message: opendir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/meta/): failed to open dir: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1162
+-------------------------------------------- 
+[Jun 28 2015 23:45:47] ERROR_HANDLER 
+Number:  2
+Message: fopen(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/meta/18760648915590872bb14e17.91220543.tmp): failed to open stream: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    883
+-------------------------------------------- 
+[Jul 01 2015 21:18:21] ERROR_HANDLER 
+Number:  2
+Message: fopen(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/localhost:8888/sightseekersdelight_wp_cache_gc.txt): failed to open stream: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1261
+-------------------------------------------- 
+[Jul 01 2015 21:18:21] ERROR_HANDLER 
+Number:  2
+Message: fclose() expects parameter 1 to be resource, boolean given
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1262
+-------------------------------------------- 
+[Jul 01 2015 21:18:21] ERROR_HANDLER 
+Number:  2
+Message: unlink(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/localhost:8888/sightseekersdelight_wp_cache_gc.txt): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1289
+-------------------------------------------- 
+[Jul 01 2015 21:19:07] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/home/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jul 01 2015 21:19:07] ERROR_HANDLER 
+Number:  2
+Message: opendir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/meta/): failed to open dir: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1162
+-------------------------------------------- 
+[Jul 01 2015 21:19:07] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/66/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jul 01 2015 21:19:07] ERROR_HANDLER 
+Number:  2
+Message: opendir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/meta/): failed to open dir: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1162
+-------------------------------------------- 
+[Jul 01 2015 21:19:07] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/86/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jul 01 2015 21:19:07] ERROR_HANDLER 
+Number:  2
+Message: opendir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/meta/): failed to open dir: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1162
+-------------------------------------------- 
+[Jul 01 2015 21:19:07] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/85/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jul 01 2015 21:19:07] ERROR_HANDLER 
+Number:  2
+Message: opendir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/meta/): failed to open dir: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1162
+-------------------------------------------- 
+[Jul 01 2015 21:19:07] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/84/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jul 01 2015 21:19:07] ERROR_HANDLER 
+Number:  2
+Message: opendir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/meta/): failed to open dir: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1162
+-------------------------------------------- 
+[Jul 01 2015 21:19:07] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/83/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jul 01 2015 21:19:07] ERROR_HANDLER 
+Number:  2
+Message: opendir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/meta/): failed to open dir: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1162
+-------------------------------------------- 
+[Jul 01 2015 21:19:17] ERROR_HANDLER 
+Number:  2
+Message: fopen(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/meta/1827928031559459557009d5.92342248.tmp): failed to open stream: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    883
+-------------------------------------------- 
+[Jul 01 2015 21:19:51] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/home/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jul 01 2015 21:19:51] ERROR_HANDLER 
+Number:  2
+Message: opendir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/meta/): failed to open dir: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1162
+-------------------------------------------- 
+[Jul 01 2015 21:19:51] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/66/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jul 01 2015 21:19:51] ERROR_HANDLER 
+Number:  2
+Message: opendir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/meta/): failed to open dir: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1162
+-------------------------------------------- 
+[Jul 01 2015 21:19:51] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/86/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jul 01 2015 21:19:51] ERROR_HANDLER 
+Number:  2
+Message: opendir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/meta/): failed to open dir: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1162
+-------------------------------------------- 
+[Jul 01 2015 21:19:51] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/85/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jul 01 2015 21:19:51] ERROR_HANDLER 
+Number:  2
+Message: opendir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/meta/): failed to open dir: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1162
+-------------------------------------------- 
+[Jul 01 2015 21:19:51] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/84/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jul 01 2015 21:19:51] ERROR_HANDLER 
+Number:  2
+Message: opendir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/meta/): failed to open dir: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1162
+-------------------------------------------- 
+[Jul 01 2015 21:19:51] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/83/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jul 01 2015 21:19:51] ERROR_HANDLER 
+Number:  2
+Message: opendir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/meta/): failed to open dir: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1162
+-------------------------------------------- 
+[Jul 01 2015 21:20:07] ERROR_HANDLER 
+Number:  2
+Message: fopen(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/meta/247334580559459876fea32.17626739.tmp): failed to open stream: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    883
+-------------------------------------------- 
+[Jul 01 2015 21:23:23] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/test/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jul 02 2015 00:07:01] ERROR_HANDLER 
+Number:  2
+Message: fopen(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/localhost:8888/sightseekersdelight_wp_cache_gc.txt): failed to open stream: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1261
+-------------------------------------------- 
+[Jul 02 2015 00:07:01] ERROR_HANDLER 
+Number:  2
+Message: fclose() expects parameter 1 to be resource, boolean given
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1262
+-------------------------------------------- 
+[Jul 02 2015 00:07:01] ERROR_HANDLER 
+Number:  2
+Message: unlink(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/localhost:8888/sightseekersdelight_wp_cache_gc.txt): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1289
+-------------------------------------------- 
+[Jul 02 2015 00:36:24] ERROR_HANDLER 
+Number:  2
+Message: Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/sightseekersdelight/wp-admin/includes/template.php:1935)
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/class-wp.php
+Line:    422
+-------------------------------------------- 
+[Jul 02 2015 00:36:24] ERROR_HANDLER 
+Number:  2
+Message: Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/sightseekersdelight/wp-admin/includes/template.php:1935)
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/class-wp.php
+Line:    436
+-------------------------------------------- 
+[Jul 02 2015 00:36:24] ERROR_HANDLER 
+Number:  2
+Message: Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/sightseekersdelight/wp-admin/includes/template.php:1935)
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/class-wp.php
+Line:    436
+-------------------------------------------- 
+[Jul 02 2015 00:36:24] ERROR_HANDLER 
+Number:  2
+Message: Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/sightseekersdelight/wp-admin/includes/template.php:1935)
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/class-wp.php
+Line:    436
+-------------------------------------------- 
+[Jul 02 2015 00:36:24] ERROR_HANDLER 
+Number:  2
+Message: Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/sightseekersdelight/wp-admin/includes/template.php:1935)
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/class-wp.php
+Line:    436
+-------------------------------------------- 
+[Jul 02 2015 00:36:24] ERROR_HANDLER 
+Number:  2
+Message: Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/sightseekersdelight/wp-admin/includes/template.php:1935)
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/class-wp.php
+Line:    436
+-------------------------------------------- 
+[Jul 02 2015 00:36:24] ERROR_HANDLER 
+Number:  2
+Message: Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/sightseekersdelight/wp-admin/includes/template.php:1935)
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/functions.php
+Line:    1000
+-------------------------------------------- 
+[Jul 02 2015 00:36:24] ERROR_HANDLER 
+Number:  2
+Message: Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/sightseekersdelight/wp-admin/includes/template.php:1935)
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/class-wp.php
+Line:    422
+-------------------------------------------- 
+[Jul 02 2015 00:36:24] ERROR_HANDLER 
+Number:  2
+Message: Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/sightseekersdelight/wp-admin/includes/template.php:1935)
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/class-wp.php
+Line:    436
+-------------------------------------------- 
+[Jul 02 2015 00:36:24] ERROR_HANDLER 
+Number:  2
+Message: Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/sightseekersdelight/wp-admin/includes/template.php:1935)
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/class-wp.php
+Line:    436
+-------------------------------------------- 
+[Jul 02 2015 00:36:24] ERROR_HANDLER 
+Number:  2
+Message: Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/sightseekersdelight/wp-admin/includes/template.php:1935)
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/class-wp.php
+Line:    436
+-------------------------------------------- 
+[Jul 02 2015 00:36:24] ERROR_HANDLER 
+Number:  2
+Message: Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/sightseekersdelight/wp-admin/includes/template.php:1935)
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/class-wp.php
+Line:    436
+-------------------------------------------- 
+[Jul 02 2015 00:36:24] ERROR_HANDLER 
+Number:  2
+Message: Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/sightseekersdelight/wp-admin/includes/template.php:1935)
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/class-wp.php
+Line:    436
+-------------------------------------------- 
+[Jul 02 2015 00:36:24] ERROR_HANDLER 
+Number:  2
+Message: Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/sightseekersdelight/wp-admin/includes/template.php:1935)
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/functions.php
+Line:    1000
+-------------------------------------------- 
