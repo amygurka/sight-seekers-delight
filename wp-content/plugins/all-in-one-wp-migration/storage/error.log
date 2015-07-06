@@ -946,3 +946,183 @@ Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/su
 File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
 Line:    1085
 -------------------------------------------- 
+[Jul 06 2015 05:22:19] ERROR_HANDLER 
+Number:  2
+Message: Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/sightseekersdelight/wp-admin/includes/template.php:1935)
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/class-wp.php
+Line:    422
+-------------------------------------------- 
+[Jul 06 2015 05:22:19] ERROR_HANDLER 
+Number:  2
+Message: Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/sightseekersdelight/wp-admin/includes/template.php:1935)
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/class-wp.php
+Line:    436
+-------------------------------------------- 
+[Jul 06 2015 05:22:19] ERROR_HANDLER 
+Number:  2
+Message: Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/sightseekersdelight/wp-admin/includes/template.php:1935)
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/class-wp.php
+Line:    436
+-------------------------------------------- 
+[Jul 06 2015 05:22:19] ERROR_HANDLER 
+Number:  2
+Message: Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/sightseekersdelight/wp-admin/includes/template.php:1935)
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/class-wp.php
+Line:    436
+-------------------------------------------- 
+[Jul 06 2015 05:22:19] ERROR_HANDLER 
+Number:  2
+Message: Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/sightseekersdelight/wp-admin/includes/template.php:1935)
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/class-wp.php
+Line:    436
+-------------------------------------------- 
+[Jul 06 2015 05:22:19] ERROR_HANDLER 
+Number:  2
+Message: Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/sightseekersdelight/wp-admin/includes/template.php:1935)
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/class-wp.php
+Line:    436
+-------------------------------------------- 
+[Jul 06 2015 05:22:19] ERROR_HANDLER 
+Number:  2
+Message: Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/sightseekersdelight/wp-admin/includes/template.php:1935)
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/functions.php
+Line:    1000
+-------------------------------------------- 
+[Jul 06 2015 05:22:19] ERROR_HANDLER 
+Number:  2
+Message: Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/sightseekersdelight/wp-admin/includes/template.php:1935)
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/class-wp.php
+Line:    422
+-------------------------------------------- 
+[Jul 06 2015 05:22:19] ERROR_HANDLER 
+Number:  2
+Message: Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/sightseekersdelight/wp-admin/includes/template.php:1935)
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/class-wp.php
+Line:    436
+-------------------------------------------- 
+[Jul 06 2015 05:22:19] ERROR_HANDLER 
+Number:  2
+Message: Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/sightseekersdelight/wp-admin/includes/template.php:1935)
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/class-wp.php
+Line:    436
+-------------------------------------------- 
+[Jul 06 2015 05:22:19] ERROR_HANDLER 
+Number:  2
+Message: Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/sightseekersdelight/wp-admin/includes/template.php:1935)
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/class-wp.php
+Line:    436
+-------------------------------------------- 
+[Jul 06 2015 05:22:19] ERROR_HANDLER 
+Number:  2
+Message: Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/sightseekersdelight/wp-admin/includes/template.php:1935)
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/class-wp.php
+Line:    436
+-------------------------------------------- 
+[Jul 06 2015 05:22:19] ERROR_HANDLER 
+Number:  2
+Message: Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/sightseekersdelight/wp-admin/includes/template.php:1935)
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/class-wp.php
+Line:    436
+-------------------------------------------- 
+[Jul 06 2015 05:22:19] ERROR_HANDLER 
+Number:  2
+Message: Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/sightseekersdelight/wp-admin/includes/template.php:1935)
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/functions.php
+Line:    1000
+-------------------------------------------- 
+[Jul 06 2015 05:47:09] ERROR_HANDLER 
+Number:  2
+Message: fopen(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/localhost:8888/sightseekersdelight_wp_cache_gc.txt): failed to open stream: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1261
+-------------------------------------------- 
+[Jul 06 2015 05:47:09] ERROR_HANDLER 
+Number:  2
+Message: fclose() expects parameter 1 to be resource, boolean given
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1262
+-------------------------------------------- 
+[Jul 06 2015 05:47:09] ERROR_HANDLER 
+Number:  2
+Message: unlink(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/localhost:8888/sightseekersdelight_wp_cache_gc.txt): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1289
+-------------------------------------------- 
+[Jul 06 2015 05:52:23] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/product/paris-along-the-siene/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jul 06 2015 05:52:48] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/product/paris-along-the-siene/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jul 06 2015 06:04:12] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/product/time-travel-to-montmarte/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jul 06 2015 06:05:20] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/product/time-travel-to-montmarte/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jul 06 2015 06:08:05] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/product/jewish-history-of-marais/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jul 06 2015 06:11:27] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/product/pere-lachaise-cemetery/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jul 06 2015 06:12:03] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/product/pere-lachaise-cemetery/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jul 06 2015 06:13:43] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/product/pere-lachaise-cemetery/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jul 06 2015 06:15:37] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/product/pere-lachaise-cemetery/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jul 06 2015 06:17:15] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/product/pere-lachaise-cemetery/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jul 06 2015 06:18:15] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/product/paris-along-the-siene/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jul 06 2015 06:18:23] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/product/secrets-of-the-night/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jul 06 2015 06:18:38] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/product/tickle-your-tastebuds-tour/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
