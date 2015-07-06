@@ -592,3 +592,243 @@ Message: Cannot modify header information - headers already sent by (output star
 File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/functions.php
 Line:    1000
 -------------------------------------------- 
+[Jul 02 2015 20:27:23] ERROR_HANDLER 
+Number:  2
+Message: fopen(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/localhost:8888/sightseekersdelight_wp_cache_gc.txt): failed to open stream: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1261
+-------------------------------------------- 
+[Jul 02 2015 20:27:23] ERROR_HANDLER 
+Number:  2
+Message: fclose() expects parameter 1 to be resource, boolean given
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1262
+-------------------------------------------- 
+[Jul 02 2015 20:27:23] ERROR_HANDLER 
+Number:  2
+Message: unlink(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/localhost:8888/sightseekersdelight_wp_cache_gc.txt): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1289
+-------------------------------------------- 
+[Jul 02 2015 20:40:43] ERROR_HANDLER 
+Number:  2
+Message: fopen(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/meta/20880736555595a1cb47cdd1.12304866.tmp): failed to open stream: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    883
+-------------------------------------------- 
+[Jul 02 2015 21:29:04] ERROR_HANDLER 
+Number:  2
+Message: fopen(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/localhost:8888/sightseekersdelight_wp_cache_gc.txt): failed to open stream: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1261
+-------------------------------------------- 
+[Jul 02 2015 21:29:04] ERROR_HANDLER 
+Number:  2
+Message: fclose() expects parameter 1 to be resource, boolean given
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1262
+-------------------------------------------- 
+[Jul 02 2015 21:29:04] ERROR_HANDLER 
+Number:  2
+Message: unlink(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/localhost:8888/sightseekersdelight_wp_cache_gc.txt): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1289
+-------------------------------------------- 
+[Jul 03 2015 17:58:48] ERROR_HANDLER 
+Number:  2
+Message: fopen(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/localhost:8888/sightseekersdelight_wp_cache_gc.txt): failed to open stream: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1261
+-------------------------------------------- 
+[Jul 03 2015 17:58:48] ERROR_HANDLER 
+Number:  2
+Message: fclose() expects parameter 1 to be resource, boolean given
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1262
+-------------------------------------------- 
+[Jul 03 2015 17:58:48] ERROR_HANDLER 
+Number:  2
+Message: unlink(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/localhost:8888/sightseekersdelight_wp_cache_gc.txt): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1289
+-------------------------------------------- 
+[Jul 03 2015 19:14:49] ERROR_HANDLER 
+Number:  2
+Message: fopen(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/localhost:8888/sightseekersdelight_wp_cache_gc.txt): failed to open stream: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1261
+-------------------------------------------- 
+[Jul 03 2015 19:14:49] ERROR_HANDLER 
+Number:  2
+Message: fclose() expects parameter 1 to be resource, boolean given
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1262
+-------------------------------------------- 
+[Jul 03 2015 19:14:49] ERROR_HANDLER 
+Number:  2
+Message: unlink(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/localhost:8888/sightseekersdelight_wp_cache_gc.txt): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1289
+-------------------------------------------- 
+[Jul 06 2015 01:45:42] ERROR_HANDLER 
+Number:  2
+Message: fopen(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/localhost:8888/sightseekersdelight_wp_cache_gc.txt): failed to open stream: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1261
+-------------------------------------------- 
+[Jul 06 2015 01:45:42] ERROR_HANDLER 
+Number:  2
+Message: fclose() expects parameter 1 to be resource, boolean given
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1262
+-------------------------------------------- 
+[Jul 06 2015 01:45:42] ERROR_HANDLER 
+Number:  2
+Message: unlink(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/localhost:8888/sightseekersdelight_wp_cache_gc.txt): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1289
+-------------------------------------------- 
+[Jul 06 2015 01:46:04] ERROR_HANDLER 
+Number:  2
+Message: gzinflate(): data error
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/class-http.php
+Line:    2116
+-------------------------------------------- 
+[Jul 06 2015 01:54:34] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/test/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jul 06 2015 01:55:30] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/hello-world/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jul 06 2015 02:34:39] ERROR_HANDLER 
+Number:  2
+Message: Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/sightseekersdelight/wp-admin/includes/template.php:1935)
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/class-wp.php
+Line:    422
+-------------------------------------------- 
+[Jul 06 2015 02:34:39] ERROR_HANDLER 
+Number:  2
+Message: Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/sightseekersdelight/wp-admin/includes/template.php:1935)
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/class-wp.php
+Line:    436
+-------------------------------------------- 
+[Jul 06 2015 02:34:39] ERROR_HANDLER 
+Number:  2
+Message: Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/sightseekersdelight/wp-admin/includes/template.php:1935)
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/class-wp.php
+Line:    436
+-------------------------------------------- 
+[Jul 06 2015 02:34:39] ERROR_HANDLER 
+Number:  2
+Message: Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/sightseekersdelight/wp-admin/includes/template.php:1935)
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/class-wp.php
+Line:    436
+-------------------------------------------- 
+[Jul 06 2015 02:34:39] ERROR_HANDLER 
+Number:  2
+Message: Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/sightseekersdelight/wp-admin/includes/template.php:1935)
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/class-wp.php
+Line:    436
+-------------------------------------------- 
+[Jul 06 2015 02:34:39] ERROR_HANDLER 
+Number:  2
+Message: Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/sightseekersdelight/wp-admin/includes/template.php:1935)
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/class-wp.php
+Line:    436
+-------------------------------------------- 
+[Jul 06 2015 02:34:39] ERROR_HANDLER 
+Number:  2
+Message: Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/sightseekersdelight/wp-admin/includes/template.php:1935)
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/functions.php
+Line:    1000
+-------------------------------------------- 
+[Jul 06 2015 02:34:39] ERROR_HANDLER 
+Number:  2
+Message: Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/sightseekersdelight/wp-admin/includes/template.php:1935)
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/class-wp.php
+Line:    422
+-------------------------------------------- 
+[Jul 06 2015 02:34:39] ERROR_HANDLER 
+Number:  2
+Message: Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/sightseekersdelight/wp-admin/includes/template.php:1935)
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/class-wp.php
+Line:    436
+-------------------------------------------- 
+[Jul 06 2015 02:34:39] ERROR_HANDLER 
+Number:  2
+Message: Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/sightseekersdelight/wp-admin/includes/template.php:1935)
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/class-wp.php
+Line:    436
+-------------------------------------------- 
+[Jul 06 2015 02:34:39] ERROR_HANDLER 
+Number:  2
+Message: Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/sightseekersdelight/wp-admin/includes/template.php:1935)
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/class-wp.php
+Line:    436
+-------------------------------------------- 
+[Jul 06 2015 02:34:39] ERROR_HANDLER 
+Number:  2
+Message: Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/sightseekersdelight/wp-admin/includes/template.php:1935)
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/class-wp.php
+Line:    436
+-------------------------------------------- 
+[Jul 06 2015 02:34:39] ERROR_HANDLER 
+Number:  2
+Message: Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/sightseekersdelight/wp-admin/includes/template.php:1935)
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/class-wp.php
+Line:    436
+-------------------------------------------- 
+[Jul 06 2015 02:34:39] ERROR_HANDLER 
+Number:  2
+Message: Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/sightseekersdelight/wp-admin/includes/template.php:1935)
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/functions.php
+Line:    1000
+-------------------------------------------- 
+[Jul 06 2015 02:38:58] ERROR_HANDLER 
+Number:  2
+Message: unlink(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/uploads/2015/07/phone-thief-150x150.png): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/post.php
+Line:    4874
+-------------------------------------------- 
+[Jul 06 2015 02:39:12] ERROR_HANDLER 
+Number:  2
+Message: unlink(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/uploads/2015/07/Industry-recognition-150x150.png): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/post.php
+Line:    4874
+-------------------------------------------- 
+[Jul 06 2015 02:45:24] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/test/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jul 06 2015 02:45:54] ERROR_HANDLER 
+Number:  2
+Message: fopen(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/localhost:8888/sightseekersdelight_wp_cache_gc.txt): failed to open stream: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1261
+-------------------------------------------- 
+[Jul 06 2015 02:45:54] ERROR_HANDLER 
+Number:  2
+Message: fclose() expects parameter 1 to be resource, boolean given
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1262
+-------------------------------------------- 
+[Jul 06 2015 02:45:54] ERROR_HANDLER 
+Number:  2
+Message: unlink(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/localhost:8888/sightseekersdelight_wp_cache_gc.txt): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1289
+-------------------------------------------- 
+[Jul 06 2015 03:20:28] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/travel-services/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
