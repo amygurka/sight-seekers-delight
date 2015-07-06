@@ -850,3 +850,99 @@ Message: unlink(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/l
 File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
 Line:    1289
 -------------------------------------------- 
+[Jul 06 2015 04:43:12] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/travel-services/): Directory not empty
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jul 06 2015 04:46:30] ERROR_HANDLER 
+Number:  2
+Message: fopen(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/localhost:8888/sightseekersdelight_wp_cache_gc.txt): failed to open stream: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1261
+-------------------------------------------- 
+[Jul 06 2015 04:46:30] ERROR_HANDLER 
+Number:  2
+Message: fclose() expects parameter 1 to be resource, boolean given
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1262
+-------------------------------------------- 
+[Jul 06 2015 04:46:30] ERROR_HANDLER 
+Number:  2
+Message: unlink(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/localhost:8888/sightseekersdelight_wp_cache_gc.txt): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1289
+-------------------------------------------- 
+[Jul 06 2015 04:46:49] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/blog/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jul 06 2015 04:46:49] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/book-a-tour/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jul 06 2015 04:46:49] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/booking-plugin-test/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jul 06 2015 04:46:49] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/cart/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jul 06 2015 04:46:49] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/checkout/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jul 06 2015 04:46:49] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/contact/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jul 06 2015 04:46:49] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/events-calendar-test/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jul 06 2015 04:46:49] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/google-calendar-test/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jul 06 2015 04:46:49] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/guides/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jul 06 2015 04:46:49] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/my-account/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jul 06 2015 04:46:49] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/sample-page/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
+[Jul 06 2015 04:46:49] ERROR_HANDLER 
+Number:  2
+Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/supercache/localhost/sightseekersdelight/tours/): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1085
+-------------------------------------------- 
