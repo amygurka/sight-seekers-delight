@@ -1126,3 +1126,39 @@ Message: rmdir(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/su
 File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
 Line:    1085
 -------------------------------------------- 
+[Jul 07 2015 01:23:17] ERROR_HANDLER 
+Number:  2
+Message: fopen(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/localhost:8888/sightseekersdelight_wp_cache_gc.txt): failed to open stream: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1261
+-------------------------------------------- 
+[Jul 07 2015 01:23:17] ERROR_HANDLER 
+Number:  2
+Message: fclose() expects parameter 1 to be resource, boolean given
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1262
+-------------------------------------------- 
+[Jul 07 2015 01:23:17] ERROR_HANDLER 
+Number:  2
+Message: unlink(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/localhost:8888/sightseekersdelight_wp_cache_gc.txt): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1289
+-------------------------------------------- 
+[Jul 08 2015 01:43:55] ERROR_HANDLER 
+Number:  2
+Message: fopen(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/localhost:8888/sightseekersdelight_wp_cache_gc.txt): failed to open stream: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1261
+-------------------------------------------- 
+[Jul 08 2015 01:43:55] ERROR_HANDLER 
+Number:  2
+Message: fclose() expects parameter 1 to be resource, boolean given
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1262
+-------------------------------------------- 
+[Jul 08 2015 01:43:55] ERROR_HANDLER 
+Number:  2
+Message: unlink(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/localhost:8888/sightseekersdelight_wp_cache_gc.txt): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1289
+-------------------------------------------- 
