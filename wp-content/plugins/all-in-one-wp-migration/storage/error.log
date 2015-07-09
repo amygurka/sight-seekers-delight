@@ -1162,3 +1162,39 @@ Message: unlink(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/l
 File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
 Line:    1289
 -------------------------------------------- 
+[Jul 09 2015 21:58:50] ERROR_HANDLER 
+Number:  2
+Message: gzinflate(): data error
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/class-http.php
+Line:    2116
+-------------------------------------------- 
+[Jul 09 2015 21:58:50] ERROR_HANDLER 
+Number:  2
+Message: fopen(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/localhost:8888/sightseekersdelight_wp_cache_gc.txt): failed to open stream: No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1261
+-------------------------------------------- 
+[Jul 09 2015 21:58:50] ERROR_HANDLER 
+Number:  2
+Message: fclose() expects parameter 1 to be resource, boolean given
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1262
+-------------------------------------------- 
+[Jul 09 2015 21:58:50] ERROR_HANDLER 
+Number:  2
+Message: unlink(/Applications/MAMP/htdocs/sightseekersdelight/wp-content/cache/localhost:8888/sightseekersdelight_wp_cache_gc.txt): No such file or directory
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-content/plugins/wp-super-cache/wp-cache-phase2.php
+Line:    1289
+-------------------------------------------- 
+[Jul 09 2015 22:06:00] ERROR_HANDLER 
+Number:  2
+Message: gzinflate(): data error
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/class-http.php
+Line:    2116
+-------------------------------------------- 
+[Jul 09 2015 22:06:01] ERROR_HANDLER 
+Number:  2
+Message: gzinflate(): data error
+File:    /Applications/MAMP/htdocs/sightseekersdelight/wp-includes/class-http.php
+Line:    2116
+-------------------------------------------- 
