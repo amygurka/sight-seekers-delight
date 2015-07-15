@@ -9,3 +9,40 @@
 06-28-2015 @ 21:54:36 - Google API Access Token renewed successfully: ya29.oAEjOCnJn9BkWi8MMQkOfpn429tfcKe_90HlsGDwc0KC4P8XgNAgyVzk0cuimkFxUoLK60g-YXo7jw
 06-28-2015 @ 21:54:36 - Getting Google API Access Token...
 06-28-2015 @ 21:54:36 - Access Token recovered by transients: ya29.oAEjOCnJn9BkWi8MMQkOfpn429tfcKe_90HlsGDwc0KC4P8XgNAgyVzk0cuimkFxUoLK60g-YXo7jw
+07-10-2015 @ 00:54:19 - Getting Google API Access Token...
+07-10-2015 @ 00:54:19 - Generating a new Access Token...
+07-10-2015 @ 00:54:19 - Error while generating the Access Token: Array
+(
+    [headers] => Array
+        (
+            [content-type] => application/json
+            [date] => Fri, 10 Jul 2015 00:54:19 GMT
+            [expires] => Fri, 10 Jul 2015 00:54:19 GMT
+            [cache-control] => private, max-age=0
+            [x-content-type-options] => nosniff
+            [x-frame-options] => SAMEORIGIN
+            [x-xss-protection] => 1; mode=block
+            [server] => GSE
+            [alternate-protocol] => 443:quic,p=1
+            [accept-ranges] => none
+            [vary] => Accept-Encoding
+        )
+
+    [body] => {
+  "error" : "deleted_client",
+  "error_description" : "The OAuth client was deleted."
+}
+    [response] => Array
+        (
+            [code] => 401
+            [message] => Unauthorized
+        )
+
+    [cookies] => Array
+        (
+        )
+
+    [filename] => 
+)
+
+07-10-2015 @ 00:54:19 - Failed to retrieve and generate the Access Token
